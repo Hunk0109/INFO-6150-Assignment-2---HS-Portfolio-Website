@@ -1,0 +1,242 @@
+/* Add this CSS to your styles.css file or within a <style> element in the HTML head */
+
+#certifications-gallery {
+  text-align: center;
+  padding: 20px; /* Add padding for spacing */
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Add gap between images */
+}
+
+figure {
+  flex: 1; /* Allow images to grow equally and fill the container */
+  max-width: 250px; /* Set a maximum width for each image */
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+figure:hover {
+  transform: scale(1.05);
+}
+
+img {
+  width: 100%; /* Ensure images fill their containers */
+  height: auto;
+  display: block; /* Remove extra spacing beneath images */
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and text color */
+body {
+  background-color: #f7f7f7;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgb(219, 233, 153);
+  border: 1px solid #333;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+/* Apply a hover effect for better user experience */
+tr:hover {
+  background-color: #ccc;
+}
+
+/* Main content styling */
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: #97dadb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Contact section */
+address a {
+  display: block;
+  margin-bottom: 10px;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+/* Contact form */
+form {
+  background-color: rgb(152, 182, 94);
+  margin-top: 20px;
+}
+
+button{
+  background-color: coral;
+}
+
+/* Footer styling */
+footer {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+video {
+  margin-top: 10;
+  width: 40%;
+}
+/* Style the specific sections */
+#about, #experience, #projects {
+  background-color: lightyellow;
+  flex: 1;
+  float: left;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: calc(33.33% - 20px); /* Divide into three equal columns */
+}
+
+#about h2, #experience h2, #projects h2 {
+  margin-top: 0;
+}
+
+#about ul, #experience ul, #projects ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+
+
+/* Add this CSS to your styles.css file or within a <style> element in the HTML head */
+
+/* ... Previous CSS Rules ... */
+
+/* Media query for iPad (768px) */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  #about, #experience, #projects {
+    flex: none;
+    width: 100%;
+    margin: 10px;
+  }
+  
+  .gallery {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
+
+/* Media query for smartphones (350 – 365px) */
+@media screen and (max-width: 365px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  #about, #experience, #projects {
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .container {
+    margin: 5px;
+  }
+  
+  .gallery {
+    gap: 10px;
+  }
+
+  figure {
+    max-width: 100%;
+  }
+
+  figcaption {
+    font-size: 12px;
+  }
+}
+
+/* ... Remaining CSS Rules ... */
+
